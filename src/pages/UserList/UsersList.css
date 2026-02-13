@@ -1,0 +1,181 @@
+.users-page {
+  padding: 24px;
+}
+
+/* Header */
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.stat-card h3 {
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stat-trend {
+  font-size: 12px;
+  color: #16a34a;
+}
+
+/* Table */
+.table-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+.users-table td {
+  padding: 14px 0;
+  border-top: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+/* User cell */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.verified {
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.active {
+  background: #e6f9ee;
+  color: #0f9d58;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.inactive {
+  background: #ffeaea;
+  color: #d93025;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+.status.suspended {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status.inactive {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Misc */
+.muted {
+  color: #6b7280;
+}
+
+.premium {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.view-link {
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pagination-info {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.pagination-buttons button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination-buttons .primary {
+  background: #2563eb;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.pagination-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

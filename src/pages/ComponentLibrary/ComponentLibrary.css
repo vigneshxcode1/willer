@@ -1,0 +1,218 @@
+/* Main Layout */
+.admin-container {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 55%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Title */
+h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-title {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-change {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.stat-change.positive {
+  color: #16a34a;
+}
+
+.stat-change.negative {
+  color: #dc2626;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter-bar input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* Section */
+.section {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: black;
+}
+
+.danger-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.success-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.warning-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.full-btn {
+  width: 100%;
+  background: #111827;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* Status Chips */
+.chip-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-chip {
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status-chip.success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-chip.danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-chip.warning {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.status-chip.pending {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.status-chip.info {
+  background: #ede9fe;
+  color: #7c3aed;
+}

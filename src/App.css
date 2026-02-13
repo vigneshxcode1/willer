@@ -1,0 +1,42 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.app-layout .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* adjust as needed */
+  height: 100vh;
+  background-color: #1f2937;
+  color: white;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Main content */
+.app-layout .main {
+  margin-left: 250px; /* same as sidebar width */
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Topbar */
+.app-layout .main .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: #f9fafb;
+}
+
+/* Page content scrollable */
+.app-layout .main .page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}
